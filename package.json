@@ -1,0 +1,26 @@
+{
+    "name": "h5vs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack",
+        "relay": "node ./app/websocket-relay.js 12345 8800 8801",
+        "start": "webpack-dev-server --progress --colors --port 8802 --content-base dist/ --host 0.0.0.0 --inline  --hot -d"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-es2015": "^6.24.1",
+        "webpack": "^3.5.5",
+        "webpack-dev-server": "^2.7.1"
+    },
+    "dependencies": {
+        "babel-polyfill": "^6.26.0",
+        "jsmpeg": "^1.0.0",
+        "ws": "^3.1.0"
+    }
+}
